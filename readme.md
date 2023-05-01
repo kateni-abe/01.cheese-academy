@@ -2,7 +2,7 @@
 
 ## DEMO
 
-- デプロイしている場合は URL を記入（任意）
+- https://kateni-abe.github.io/01.cheese-academy/
 
 ## 紹介と使い方
 
