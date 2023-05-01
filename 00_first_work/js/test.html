@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Google Maps API</title>
+    <style>
+      #map {
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    <script>
+      function initMap() {
+        const location = { lat: 35.681167, lng: 139.767052 }; // 東京駅の緯度経度
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 16,
+          center: location,
+        });
+        const iconUrl = "path/to/your/custom/icon.png";
+        const iconSize = new google.maps.Size(50, 50); // アイコンのサイズ
+        const iconOrigin = new google.maps.Point(0, 0); // アイコンの基準点（左上）
+        const iconAnchor = new google.maps.Point(25, 50); // アイコンのアンカーポイント（中央下）
+        const icon = {
+          url: iconUrl,
+          size: iconSize,
+          origin: iconOrigin,
+          anchor: iconAnchor,
+        };
+        const marker = new google.maps.Marker({
+          position: location,
+          map: map,
+          icon: icon,
+        });
+      }
+    </script>
+  </body>
+</html>
