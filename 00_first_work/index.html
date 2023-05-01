@@ -1,337 +1,649 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Cheese Academy</title>
-    <meta name="description" content=“世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。”>
-    <meta property="og:title" content="チーズアカデミー">
+
+    <meta
+      name="description"
+      content="世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。" />
+    <meta property="og:title" content="チーズアカデミー" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="#" />
     <meta property="og:site_name" content="チーズアカデミー" />
-    <meta property="og:description" content="世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。" />
-    <meta name="format-detection" content="telephone=no">
-    <link rel="canonical" href="#">
+    <meta
+      property="og:description"
+      content="世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="canonical" href="#" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/sanitize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <!--ファビコン-->
-    <link rel="icon" href="img/favicon.svg">
-    <link rel="apple-touch-icon" href="img/favicon.svg" sizes="180x180">
-    <!--googlefonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- あらかじめcssを読み込んでいるので設定しなくてOK-->
-</head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/7-1/css/7-1.css" />
 
-<body>
+    <!--ファビコン-->
+    <link rel="icon" href="img/favicon.svg" />
+    <link rel="apple-touch-icon" href="img/favicon.svg" sizes="180x180" />
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+    <!-- あらかじめcssを読み込んでいるので設定しなくてOK-->
+  </head>
+
+  <body>
+    <!--=======================================================
+        ローディング/ロゴアニメーション
+    ========================================================-->
+
+    <div id="splash">
+      <div id="splash_logo">
+        <img src="img/logo.png" alt="" class="fadeUp" />
+      </div>
+    </div>
+
+    <!--=======================================================
+        ヘッダー
+    ========================================================-->
 
     <header id="header">
+      <!--===================
+          トップ画像
+      ====================-->
 
-<!-- トップ画像 -->
-        <section class="title_box">
-            <div class="title_box_text">
-                    <!--<h1>セカイを変えるチーズを作ろう</h1>
+      <section class="title_box">
+        <div class="title_box_text">
+          <!--<h1>セカイを変えるチーズを作ろう</h1>
                     <h2>チーズ職人養成学校<br>チーズアカデミーFUKUOKA</h2>-->
-                    <div id="title_logo" class="buruburu">
-                        <img src="img/logo.png" alt="">
-                    </div>
-            </div>
+          <div id="title_logo" class="buruburu">
+            <img src="img/logo.png" alt="" />
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <!--===================
+          ヘッダーロゴ
+      ====================-->
 
-<!-- ヘッダーロゴ -->
-        <section class="navi">
-        
-            <div class="logo">
-                <a href=""><img src="img/header_logo.png" alt=""></a>
-            </div>
+      <section class="navi">
+        <div class="logo">
+          <a href=""><img src="img/header_logo.png" alt="" /></a>
+        </div>
 
-        <!--ナビゲーション-->
-            <nav>
-                <ul id="page-link" class="navi_menu">
-                    <li class="buruburu"><a href="#area-1">ABOUT</a></li>
-                    <li class="buruburu"><a href="#area-2">COURSE</a></li>
-                    <li class="buruburu"><a href="#area-3">NEWS</a></li>
-                    <li class="buruburu"><a href="#area-4">ACCESS</a></li>
-                    <li class="menu buruburu"><a href="#area-5">CONTACT</a></li>
-                </ul>
-            </nav>
+        <!--===================
+            ナビゲーション
+        ====================-->
 
-        </section>
+        <nav>
+          <ul id="page-link" class="navi_menu">
+            <li class="buruburu"><a href="#area-1">ABOUT</a></li>
+            <li class="buruburu"><a href="#area-2">COURSE</a></li>
+            <li class="buruburu"><a href="#area-3">NEWS</a></li>
+            <li class="buruburu"><a href="#area-4">ACCESS</a></li>
+            <li class="menu buruburu"><a href="#area-5">CONTACT</a></li>
+          </ul>
+        </nav>
+      </section>
     </header>
 
+    <!--=======================================================
+        ABOUT
+    ========================================================-->
 
+    <!--===================
+        概要説明テキスト
+    ===================-->
 
-
-
-<!--概要説明-->
     <section id="area-1" class="about">
-        <h2>ABOUT</h2>
-        <h3>チーズアカデミーについて</h3>
-        <div class="about_text1">
-            <p>チーズアカデミーは、チーズ職人養成学校です。</p>
-        </div>
-        <div class="about_text2">
-            <p>チーズの素晴らしさを、自給自足を通じて、できるだけ多くの人に知っていただきたい。<br>そして，食卓にはいつもチーズがあった、あの頃の当たり前をこの手で取り戻したい。</p><br>
-            <p>そんな思いから、チーズ職人養成学校「チーズアカデミーFUKUOKA」は歩みを始めています。</p><br>
-            <p>卒業後、チーズ自給自足のバックアップはもちろんのこと、<br>チーズ職人への就職・転職もサポートします。</p>
-        </div>
+      <h2>ABOUT</h2>
+      <h3>チーズアカデミーについて</h3>
+      <div class="about_text1">
+        <p>チーズアカデミーは、チーズ職人養成学校です。</p>
+      </div>
+      <div class="about_text2">
+        <p>
+          チーズの素晴らしさを、自給自足を通じて、できるだけ多くの人に知っていただきたい。<br />そして，食卓にはいつもチーズがあった、あの頃の当たり前をこの手で取り戻したい。
+        </p>
+        <br />
+        <p>そんな思いから、チーズ職人養成学校「チーズアカデミーFUKUOKA」は歩みを始めています。</p>
+        <br />
+        <p>卒業後、チーズ自給自足のバックアップはもちろんのこと、 <br />チーズ職人への就職・転職もサポートします。</p>
+      </div>
     </section>
 
-<!--コース案内-->
-    <ul id="area-2" class="slider hover">
-        <li><img src="img/about_01.jpg" alt=""></li>
-        <li><img src="img/about_02.jpg" alt=""></li>
-        <li><img src="img/about_03.jpg" alt=""></li>
-        <li><img src="img/about_04.jpg" alt=""></li>
-        <li><img src="img/about_01.jpg" alt=""></li>
-        <li><img src="img/about_02.jpg" alt=""></li>
-        <li><img src="img/about_03.jpg" alt=""></li>
-        <li><img src="img/about_04.jpg" alt=""></li>
+    <!--============================
+        スライド画像
+    =============================-->
+
+    <ul id="area-2" class="slider">
+      <li><img src="img/about_01.jpg" alt="" /></li>
+      <li><img src="img/about_02.jpg" alt="" /></li>
+      <li><img src="img/about_03.jpg" alt="" /></li>
+      <li><img src="img/about_04.jpg" alt="" /></li>
+      <li><img src="img/about_01.jpg" alt="" /></li>
+      <li><img src="img/about_02.jpg" alt="" /></li>
+      <li><img src="img/about_03.jpg" alt="" /></li>
+      <li><img src="img/about_04.jpg" alt="" /></li>
     </ul>
 
+    <!--=======================================================
+        COURSE
+    ========================================================-->
+
+    <!--============================
+        エリアタイトル
+    =============================-->
 
     <section class="course">
-        <div class="caption">
-            <h2>COURSE</h2>
-            <P>未経験からでもスタートができるよう、カリキュラムは多くの専門家や<br>現役チーズ職人のアドバイスのもと、作られました。</P>
+      <div class="caption">
+        <h2>COURSE</h2>
+        <p>
+          未経験からでもスタートができるよう、カリキュラムは多くの専門家や
+          <br />現役チーズ職人のアドバイスのもと、作られました。
+        </p>
+      </div>
+
+      <!--============================
+          画像 / FLEX-1
+      =============================-->
+
+      <div class="course_box">
+        <div class="course content">
+          <span class="mask">
+            <img src="img/course_01.jpg" alt="" />
+          </span>
+          <div class="course_content textA">
+            <div>
+              <h3>本格的な農園を使った実地研修</h3>
+              <p>
+                チーズアカデミーでは、本格的な農園を使った実地研修を行うことができます。
+                プロとして活躍するチーズ職人も使用するような、広大で環境も整った農園を余すところなく使い、
+                卒業時には本格的なチーズを自分の力で作れる実践力の養成を目指します。
+              </p>
+            </div>
+          </div>
         </div>
 
-        <section class="course_box">
+        <!--============================
+          画像 / FLEX-2
+        =============================-->
 
-            <div class="course_content">
-                <div class="course_content_img">
-                    <img src="img/course_01.jpg" alt="">
-                </div>
-                <div class="course_content_text_A">
-                    <div>
-                        <h3>本格的な農園を使った実地研修</h3>
-                        <p>チーズアカデミーでは、本格的な農園を使った実地研修を行うことができます。
-                            プロとして活躍するチーズ職人も使用するような、広大で環境も整った農園を余すところなく使い、
-                            卒業時には本格的なチーズを自分の力で作れる実践力の養成を目指します。</p>
-                    </div>
-                </div>
+        <div class="course content">
+          <div class="course_content textB">
+            <div>
+              <h3>必要な知識もしっかりと取得</h3>
+              <p>
+                チーズ作りには，しっかりとした食に関する知識が欠かせません。
+                チーズアカデミーでは、一流講師陣による、チーズ作りに必要ないろはを余すところなく学べます。
+                チーズそのものでなく、栄養学全般を学ぶことも可能ですので、チーズ以外への展開も夢ではないでしょう。
+              </p>
             </div>
+          </div>
+          <span class="mask">
+            <img src="img/course_02.jpg" alt="" />
+          </span>
+        </div>
 
-            <div class="course_content">
-                <div class="course_content_text_B">
-                    <div>
-                        <h3>必要な知識もしっかりと取得</h3>
-                        <p>チーズ作りには，しっかりとした食に関する知識が欠かせません。
-                            チーズアカデミーでは、一流講師陣による、チーズ作りに必要ないろはを余すところなく学べます。
-                           チーズそのものでなく、栄養学全般を学ぶことも可能ですので、チーズ以外への展開も夢ではないでしょう。</p>
-                    </div>
-                </div>
-                <div class="course_content_img">
-                    <img src="img/course_02.jpg" alt="">
-                </div>
-            </div>
+        <!--============================
+          画像 / FLEX-3
+        =============================-->
 
-            <div class="course_content">
-                <div class="course_content_img">
-                    <img src="img/course_03.jpg" alt="">
-                </div>
-                <div class="course_content_text_A">
-                    <div>
-                        <h3>卒業制作はティスティング審査あり</h3>
-                        <p>チーズ作りには，しっかりとした食に関する知識が欠かせません。
-                            チーズアカデミーでは最後の2ヶ月間で卒業制作を実施。卒業制作として、チーズ作りを実際に行います。
-                            卒業後，一般参加によるティスティング審査があるため、作り手の目線だけでなく、
-                            消費者の目線から、卒業制作作品としてのチーズを、しっかりと評価いただくことができます。</p>
-                    </div>
-                </div>
+        <div class="course content">
+          <span class="mask">
+            <img src="img/course_03.jpg" alt="" />
+          </span>
+          <div class="course_content textA">
+            <div>
+              <h3>卒業制作はティスティング審査あり</h3>
+              <p>
+                チーズ作りには，しっかりとした食に関する知識が欠かせません。
+                チーズアカデミーでは最後の2ヶ月間で卒業制作を実施。卒業制作として、チーズ作りを実際に行います。
+                卒業後，一般参加によるティスティング審査があるため、作り手の目線だけでなく、
+                消費者の目線から、卒業制作作品としてのチーズを、しっかりと評価いただくことができます。
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!--ニュース-->
+    <!--=======================================================
+            NEWS
+    ========================================================-->
+
+    <!--============================
+          エリアタイトル
+    =============================-->
+
     <section id="area-3" class="news">
-        <div class="caption">
-            <h2>NEWS</h2>
-            <h3>ニュース</h3>
-        </div>
-        <ul class="card_items">
-            <li>
-              <a class="card_item" href="#">
-                <article>
-                  <figure class="card_item_imgWrapper">
-                    <img src="img/news_img.jpg" alt="">
-                  </figure>
-                  <div class="card_item_body">
-                    <time datetime="2021-04-30" class="card_item_time">
-                      2023-04-22
-                    </time>
-                    <h3 class="card_item_ttl">
-                        「Kosuge Pizza」open!!
-                    </h3>
-                    <p class="card_item_txt">
-                        チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge Pizza」が天神でオープンしました！
-                    </p>
-                  </div>
-                </article>
-              </a>
-            </li>
-            <li>
-                <a class="card_item" href="#">
-                  <article>
-                    <figure class="card_item_imgWrapper">
-                      <img src="img/news_img.jpg" alt="">
-                    </figure>
-                    <div class="card_item_body">
-                      <time datetime="2021-04-30" class="card_item_time">
-                        2023-04-22
-                      </time>
-                      <h3 class="card_item_ttl">
-                          「Kosuge Pizza」open!!
-                      </h3>
-                      <p class="card_item_txt">
-                          チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge Pizza」が天神でオープンしました！
-                      </p>
-                    </div>
-                  </article>
-                </a>
-              </li>
-              <li>
-                <a class="card_item" href="#">
-                  <article>
-                    <figure class="card_item_imgWrapper">
-                      <img src="img/news_img.jpg" alt="">
-                    </figure>
-                    <div class="card_item_body">
-                      <time datetime="2021-04-30" class="card_item_time">
-                        2023-04-22
-                      </time>
-                      <h3 class="card_item_ttl">
-                          「Kosuge Pizza」open!!
-                      </h3>
-                      <p class="card_item_txt">
-                          チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge Pizza」が天神でオープンしました！
-                      </p>
-                    </div>
-                  </article>
-                </a>
-              </li>
-            
-    </section>
-    
-    <!--ボタン-->
-    <a href="https://gsacademy.jp/ "target="_blank" class="btn btn--orange btn--radius">More</a>
+      <div class="caption">
+        <h2>NEWS</h2>
+        <h3>ニュース</h3>
+      </div>
 
-    <!--アクセス-->
-    <section id="area-4" class="access">
-        <div class="caption">
-            <h2>ACCESS</h2>
-            <h3>会社情報</h3>
-        </div>
-        <div class="maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.7182368443446!2d130.39189407619054!3d33.58666427333577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191aa0929fbdf%3A0xd5e535b27b5236c6!2z44K444O844K644Ki44Kr44OH44Of44O8!5e0!3m2!1sja!2sjp!4v1681789690323!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <table class="company">
-            <tr>
-                <th>学校名</th>
-                <td>チーズアカデミーFUKUOKA</td>
-            </tr>
-            <tr>
-                <th>事務所所在地</th>
-                <td>〒810-0041 福岡県福岡市中央区大名1丁目3-41 プリオ大名ビル1F</td>
-            </tr>
-            <tr>
-                <th>TEL</th>
-                <td>000-000-0000</td>
-            </tr>
-            <tr>
-                <th>FAX</th>
-                <td>999-999-9999</td>
-            </tr>
-            <tr>
-                <th>MAIL</th>
-                <td>dummy@cheeseacademy.tokyo</td>
-            </tr>
- 
-        </table>
+      <!--============================
+          カード
+      =============================-->
+
+      <ul class="card_items">
+        <li>
+          <a class="card_item" href="#">
+            <article>
+              <figure class="card_item_imgWrapper">
+                <img src="img/news_img.jpg" alt="" />
+              </figure>
+              <div class="card_item_body">
+                <time datetime="2021-04-30" class="card_item_time"> 2023-04-22 </time>
+                <h3 class="card_item_ttl">「Kosuge Pizza」open!!</h3>
+                <p class="card_item_txt">
+                  チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge
+                  Pizza」が天神でオープンしました！
+                </p>
+              </div>
+            </article>
+          </a>
+        </li>
+
+        <li>
+          <a class="card_item" href="#">
+            <article>
+              <figure class="card_item_imgWrapper">
+                <img src="img/news_img.jpg" alt="" />
+              </figure>
+              <div class="card_item_body">
+                <time datetime="2021-04-30" class="card_item_time"> 2023-04-22 </time>
+                <h3 class="card_item_ttl">「Kosuge Pizza」open!!</h3>
+                <p class="card_item_txt">
+                  チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge
+                  Pizza」が天神でオープンしました！
+                </p>
+              </div>
+            </article>
+          </a>
+        </li>
+
+        <li>
+          <a class="card_item" href="#">
+            <article>
+              <figure class="card_item_imgWrapper">
+                <img src="img/news_img.jpg" alt="" />
+              </figure>
+              <div class="card_item_body">
+                <time datetime="2021-04-30" class="card_item_time"> 2023-04-22 </time>
+                <h3 class="card_item_ttl">「Kosuge Pizza」open!!</h3>
+                <p class="card_item_txt">
+                  チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge
+                  Pizza」が天神でオープンしました！
+                </p>
+              </div>
+            </article>
+          </a>
+        </li>
+      </ul>
     </section>
+
+    <!--============================
+          ボタン
+    =============================-->
+    <a href="https://gsacademy.jp/ " target="_blank" class="btn btn--orange btn--radius">More</a>
+
+    <!--=======================================================
+            ACCESS
+    ========================================================-->
+
+    <section id="area-4" class="access">
+      <div class="caption">
+        <h2>ACCESS</h2>
+        <h3>会社情報</h3>
+      </div>
+    </section>
+
+    <!--============================
+          google-map
+    =============================-->
+    <div id="js-access-map" class="p-access__map"></div>
+
+    <!--============================
+          ボタン
+    =============================-->
+    <a href="https://goo.gl/maps/NqnuRSu8qroagmBK9" target="_blank" class="btn btn--orange btn--radius">ACCESS</a>
+    <!--============================
+          　アクセステキスト
+      =============================-->
+
+    <table class="company">
+      <tr>
+        <th>学校名</th>
+        <td>チーズアカデミーFUKUOKA</td>
+      </tr>
+      <tr>
+        <th>事務所所在地</th>
+        <td>〒810-0041 福岡県福岡市中央区大名1丁目3-41 プリオ大名ビル1F</td>
+      </tr>
+      <tr>
+        <th>TEL</th>
+        <td>000-000-0000</td>
+      </tr>
+      <tr>
+        <th>FAX</th>
+        <td>999-999-9999</td>
+      </tr>
+      <tr>
+        <th>MAIL</th>
+        <td>dummy@cheeseacademy.tokyo</td>
+      </tr>
+    </table>
+
+    <!--=======================================================
+            CONTACT
+    ========================================================-->
 
     <section id="area-5" class="contactbox">
-        <div class="contact">
-            <div class="caption">
-                <h2>CONTACT</h2>
-                <h3>説明会お申し込み・お問い合わせ</h3>
-            </div>
-            <div class="contact_text1">
-                <p>ぜひ1度、足を運んでみませんか？説明会は随時開催中！<br>その他、お問い合わせもお気軽にどうぞ、お待ちしております！</p>
-                <br>
-            </div>
-            <div class="contact_text2">
-                <p>※チーズアカデミーは実際には存在しません。間違っても問い合わせしないようお願いいたします。</p>
-            </div>
-            
-            <!--フォーム-->
-            <form action="">
-                <div class="formbg">
-                    <table class="formbox">
-                        <tr>
-                            <th>氏名</th>
-                            <td><input class="textbox" type="text" name="name" autocomplete="name" /></td>
-                        </tr>
-                        <tr>
-                            <th>カナ</th>
-                            <td><input class="textbox" type="text" name="name" pattern="(?=.*?[\u30A1-\u30FC])[\u30A1-\u30FC\s]*" /></td>
-                        </tr>
-                        <tr>
-                            <th>メールアドレス</th>
-                            <td><input class="textbox" type="email" name="email" autocomplete="email" /></td>
-                        </tr>
-                        <tr>
-                            <th class="formitem">志望動機</th>
-                                <td>
-                                    <table class="checkbox">
-                                        <tr>
-                                            <th class="th_margin"><input type="checkbox" name="question1" id="check"></th>
-                                            <td><label for="question1">起業をしたい</label></td>
-                                        </tr>
-                                        <tr>
-                                            <th><input type="checkbox" name="question2" id="check"></th>
-                                            <td><label for="question2">チーズ系企業に就職・転職したい</label></td>
-                                        </tr>
-                                        <tr>
-                                            <th><input type="checkbox" name="question3" id="check"></th>
-                                            <td><label for="question3">チーズと関わる仕事をしており、仕事に活かしたい</label></td>
-                                        </tr>
-                                        <tr>
-                                            <th><input type="checkbox" name="question4" id="check"></th>
-                                            <td><label for="question4">チーズの教養を身につけたい</label></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        <tr>
-                            <th>詳細</th>
-                            <td><textarea class="textbox" name="" id="" cols="30" rows="10"></textarea></td>
-                        </tr>
-                    </table>
-
-                    <input class="btn btn--orange btn--radius colorbtn" type="submit">
-                </div>
-                
-            </form>
+      <div class="contact">
+        <div class="caption">
+          <h2>CONTACT</h2>
+          <h3>説明会お申し込み・お問い合わせ</h3>
         </div>
+        <div class="contact_text1">
+          <p>
+            ぜひ1度、足を運んでみませんか？説明会は随時開催中！<br />その他、お問い合わせもお気軽にどうぞ、お待ちしております！
+          </p>
+          <br />
+        </div>
+        <div class="contact_text2">
+          <p>※チーズアカデミーは実際には存在しません。間違っても問い合わせしないようお願いいたします。</p>
+        </div>
+
+        <!--============================
+          　コンタクトフォーム
+        =============================-->
+
+        <form action="">
+          <div class="formbg">
+            <table class="formbox">
+              <tr>
+                <th>氏名</th>
+                <td><input class="textbox" type="text" name="name" autocomplete="name" /></td>
+              </tr>
+              <tr>
+                <th>カナ</th>
+                <td>
+                  <input class="textbox" type="text" name="name" pattern="(?=.*?[\u30A1-\u30FC])[\u30A1-\u30FC\s]*" />
+                </td>
+              </tr>
+              <tr>
+                <th>メールアドレス</th>
+                <td><input class="textbox" type="email" name="email" autocomplete="email" /></td>
+              </tr>
+              <tr>
+                <th class="formitem">志望動機</th>
+                <td>
+                  <table class="checkbox">
+                    <tr>
+                      <th class="th_margin"><input type="checkbox" name="question1" class="check" /></th>
+                      <td><label for="question1">起業をしたい</label></td>
+                    </tr>
+                    <tr>
+                      <th><input type="checkbox" name="question2" class="check" /></th>
+                      <td><label for="question2">チーズ系企業に就職・転職したい</label></td>
+                    </tr>
+                    <tr>
+                      <th><input type="checkbox" name="question3" class="check" /></th>
+                      <td><label for="question3">チーズと関わる仕事をしており、仕事に活かしたい</label></td>
+                    </tr>
+                    <tr>
+                      <th><input type="checkbox" name="question4" class="check" /></th>
+                      <td><label for="question4">チーズの教養を身につけたい</label></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <th>詳細</th>
+                <td><textarea class="textbox" name="" id="" cols="30" rows="10"></textarea></td>
+              </tr>
+            </table>
+
+            <input class="btn btn--orange btn--radius colorbtn" type="submit" />
+          </div>
+        </form>
+      </div>
     </section>
-    <a class="pagetop" href="#"><div class="pagetop__arrow"></div></a>
 
-    <!--jQuery、動きを制御する自作のJSの2つを読み込み https://coco-factory.jp/ugokuweb/move01/8-2-1/-->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--=======================================================
+            JS読み込み
+    ========================================================-->
+
+    <!--==================================
+          　JS起動のためのメイン読み込み
+    ====================================-->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+
+    <!--==================================
+          　外部JS起動のための読み込み
+    ====================================-->
+
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!--自作のJS-->
-    <script  src="js/script.js"></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/8-1-2/js/8-1-2.js"></script>
 
-</body>
-<footer>
-    <p>copyrights 2016-2018 Cheeese Academy Fukuoka All RIghts Reserved.</p>
-</footer>
+    <!--==================================
+          　.JSファイルの読み込み
+    ====================================-->
 
+    <script src="js/script.js"></script>
+
+    <!--==================================
+          　google map表示用script
+    ====================================-->
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyB7Qk2RgQJPnyX_KPkWI2C9_G1a_upsXH4"></script>
+    <!-- APIキーを入力 -->
+    <script type="text/javascript">
+      function googleMap() {
+        const latlng = new google.maps.LatLng(33.586675516158024, 130.39447284346187); /* 座標を入れる */
+        const myOptions = {
+          zoom: 18 /*拡大比率 値が大きいと詳細に表示され、値が小さいと俯瞰*/,
+          scrollwheel: false /* スクロールを有効/無効化 */,
+          streetViewControl: false /*ストリートビューを表示させない*/,
+          center: latlng /*表示枠内の中心を軸にする*/,
+          mapTypeControlOptions: { mapTypeIds: ["style", google.maps.MapTypeId.ROADMAP] } /*表示タイプの指定*/,
+        };
+        const map = new google.maps.Map(document.getElementById("js-access-map"), myOptions);
+        /*アイコン設定*/
+        const markerOptions = {
+          position: latlng,
+          map: map,
+          icon: {
+            url: "img/cheeseicon.png" /*アイコンまでのパス*/,
+            scaledSize: new google.maps.Size(80, 96) /*アイコンのサイズ*/,
+          },
+          title: "Cheese academy" /*タイトル*/,
+          //animation: google.maps.Animation.DROP /*アニメーションしたいなら*/
+        };
+        const marker = new google.maps.Marker(markerOptions);
+        /*地図の表示をカスタマイズ 以下は白黒の例*/
+        const styleOptions = [
+          {
+            //背景色の設定================
+            featureType: "all",
+            elementType: "geometry",
+            stylers: [
+              {
+                color: "#f2e4b2",
+              },
+            ],
+          },
+          {
+            //文字================
+            featureType: "all",
+            elementType: "labels.text.fill",
+            stylers: [
+              {
+                gamma: 1,
+              },
+              {
+                lightness: 0.01,
+              },
+            ],
+          },
+          {
+            //文字の縁取り================
+            featureType: "all",
+            elementType: "labels.text.stroke",
+            stylers: [
+              {
+                saturation: -31,
+              },
+              {
+                lightness: 100,
+              },
+              {
+                weight: 1,
+              },
+              {
+                gamma: 0.8,
+              },
+            ],
+          },
+          {
+            //地図上のアイコン================
+            featureType: "all",
+            elementType: "labels.icon",
+            stylers: [
+              {
+                visibility: "off",
+              },
+            ],
+          },
+          {
+            //道以外の背景の濃さ================
+            featureType: "landscape",
+            elementType: "geometry",
+            stylers: [
+              {
+                lightness: 30,
+              },
+              {
+                saturation: 30,
+              },
+            ],
+          },
+          {
+            featureType: "landscape.natural.landcover",
+            elementType: "geometry",
+            stylers: [
+              {
+                visibility: "on",
+              },
+              {
+                saturation: "-17",
+              },
+            ],
+          },
+          {
+            featureType: "poi",
+            elementType: "geometry",
+            stylers: [
+              {
+                saturation: 20,
+              },
+            ],
+          },
+          {
+            featureType: "poi",
+            elementType: "labels.text",
+            stylers: [
+              {
+                saturation: "-26",
+              },
+            ],
+          },
+          {
+            featureType: "poi.park",
+            elementType: "geometry",
+            stylers: [
+              {
+                lightness: 20,
+              },
+              {
+                saturation: -20,
+              },
+              {
+                visibility: "off",
+              },
+              {
+                color: "#e4a5a5",
+              },
+            ],
+          },
+          {
+            featureType: "road",
+            elementType: "geometry",
+            stylers: [
+              {
+                lightness: 10,
+              },
+              {
+                saturation: -30,
+              },
+            ],
+          },
+          {
+            featureType: "road",
+            elementType: "geometry.stroke",
+            stylers: [
+              {
+                saturation: 25,
+              },
+              {
+                lightness: 25,
+              },
+            ],
+          },
+          {
+            featureType: "water",
+            elementType: "all",
+            stylers: [
+              {
+                lightness: -20,
+              },
+            ],
+          },
+        ];
+        const styledMapOptions = { name: "Cheese ACADEMYはここ" }; /*地図左上のタイトル*/
+        const originalType = new google.maps.StyledMapType(styleOptions, styledMapOptions);
+        map.mapTypes.set("style", originalType);
+        map.setMapTypeId("style");
+      }
+      google.maps.event.addDomListener(window, "load", function () {
+        googleMap();
+      });
+    </script>
+  </body>
+
+  <!--=======================================================
+          フッター
+  ========================================================-->
+
+  <footer>
+    <p>copyrights 2016-2018 Cheese Academy Fukuoka All RIghts Reserved.</p>
+
+    <!--=======================================================
+            ページトップに戻るボタン
+    ========================================================-->
+
+    <a id="page-top" href="#"><div class="arrow"></div></a>
+  </footer>
 </html>
